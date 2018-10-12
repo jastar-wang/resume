@@ -1,3 +1,9 @@
-# About
-- 该项目为本人简历，访问地址：http://resume.jastar-wang.com
-- 声明：该模板`fork`于码友`hjzgg`，如有冒犯，还请见谅，并及时联系本人。
+# Project
+- I am a loser programer,and this is my resume.
+
+# Author
+- Name：Jastar·Wang
+- Email：jastar_wang@163.com
+
+# LICENSE
+The resume is released under No License.
