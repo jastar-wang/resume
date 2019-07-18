@@ -1,368 +1,711 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="utf-8">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>个人简历-Jastar·Wang</title>
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/jquery.animateNumber.js"></script>
-    <script src="js/index.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jastar Wang - 个人简历</title>
+	<!--bootstrap Css-->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<!--ico font Css-->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+	<!-- magnific-popup Css-->
+	<link href="assets/css/magnific-popup.css" rel="stylesheet">
+	<!--lineProgressbar Css-->
+	<link href="assets/css/jquery.lineProgressbar.css" rel="stylesheet">
+	<!--owl.carousel Css-->
+	<link href="assets/css/owl.carousel.css" rel="stylesheet">
+	<!--Slick Nav Css-->
+	<link href="assets/css/slicknav.min.css" rel="stylesheet">
+	<!--Animate Css-->
+	<link href="assets/css/animate.css" rel="stylesheet">
+	<!--Style Css-->
+	<link href="assets/css/style.css" rel="stylesheet">
+	<!--Responsive Css-->
+	<link href="assets/css/responsive.css" rel="stylesheet">
+	<style type="text/css">
+		.education {
+			background-color: #eee;
+			padding-top: 50px;
+		}
+
+		.education-horizontal-timeline {
+			padding: 80px 0;
+		}
+
+		/*.education-horizontal-timeline*/
+		.education-horizontal-timeline .col-sm-4 {
+			padding: 0 2px;
+		}
+
+		.single-horizontal-timeline .experience-time h2 {
+			font-size: 14px;
+			opacity: 0.7;
+		}
+
+		.single-horizontal-timeline .experience-time h3 {
+			text-transform: capitalize;
+		}
+
+		.single-horizontal-timeline .experience-time h3 span {
+			text-transform: lowercase;
+		}
+
+		.single-horizontal-timeline .timeline-content h5 {
+			margin: 15px 0;
+		}
+
+		.single-horizontal-timeline p {
+			color: #999fb3;
+			max-width: 335px;
+		}
+
+		/*.timeline-horizontal-border*/
+		.timeline-horizontal-border {
+			display: flex;
+			align-items: center;
+			padding: 26px 0 30px;
+		}
+
+		.timeline-horizontal-border i {
+			font-size: 10px;
+			color: #d92cf9;
+			margin-right: 5px;
+		}
+
+		span.single-timeline-horizontal {
+			display: inline-block;
+			background: #b2c1ce;
+			height: 1px;
+			width: 380px;
+		}
+
+		span.single-timeline-horizontal.spacial-horizontal-line {
+			width: 88px;
+		}
+	</style>
 </head>
-<body class="my-body">
-<header>
-    <nav class="container">
-        <h1>Jastar·Wang</h1>
-        <div class="nav-links">
-            <div class="link active" href="#">关于我</div>
-            <div class="link" href="#">专业技能</div>
-            <div class="link" href="#">项目简介</div>
-            <div class="link" href="#">联系我</div>
-            <div class="nav-slide"></div>
-        </div>
-    </nav>
-    <h1 style="position: fixed; top: 0px; right: 10px;">
-        <a style="color: #cccccc;" href="./pdf/resume.pdf" target="_blank">打印简历</a>
-    </h1>
-</header>
-<section id="aboutme" class="section">
-    <div class="container">
-        <div class="slides">
-            <div class="slide">
-                <div class="warp">
-                    <div class="title">
-                        <h2>基本信息</h2>
-                        <div class="title_en">
-                            <h2>· Message ·</h2>
-                        </div>
-                    </div>
-                    <a class="title-pre" href="javascript:void(0)">自我介绍</a>
-                    <a class="title-next" href="javascript:void(0)">工作经历</a>
-                    <div class="message_head_content">
-                        <img id="head_one" src="img/headImg1.jpg"/>
-                        <img id="head_two" src="img/headImg2.jpg" style="opacity: 0;"/>
-                    </div>
-                    <div class="message_body">
-                        <div class="my_motto">纸上得来终觉浅，绝知此事要躬行。</div>
-                        <div class="message_box">
-                            <p>我叫 <span style="font-weight: bold;">王 * *</span></p>
-                            <p>26岁，双身狗，工作近四年</p>
-                            <p>一名java软件工程师，现居帝都昌平</p>
-                            <p>北上之日起，就决定为我们伟大首都的空气贡献出自己的一份力量</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="warp">
-                    <div class="title">
-                        <h2>工作经历</h2>
-                        <div class="title_en">
-                            <h2>· Experience ·</h2>
-                        </div>
-                    </div>
-                    <a class="title-pre" href="javascript:void(0)">基本信息</a>
-                    <a class="title-next" href="javascript:void(0)">自我介绍</a>
-                    <div id="experience">
-                        <div class="vertical-slides">
-                            <div class="vslide">
-                                <div class="warp">
-                                    <div class="work-content">
-                                        <h3>易科智控科技（北京）有限公司</h3>
-                                        <p>2016年3月~2018年4月</p>
-                                        <ul>
-                                            <li>负责相关文档的撰写</li>
-                                            <li>模块开发、测试及Bug修改</li>
-                                            <li>担任相关项目的设计、管理及主要开发工作</li>
-                                            <li>相关技术的调研及培训</li>
-                                            <li>协助运维人员进行项目的实施和部署</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="vslide">
-                                <div class="warp">
-                                    <div class="work-content">
-                                        <h3>北京新微科技有限公司</h3>
-                                        <p>2014年1月~2016年2月</p>
-                                        <ul>
-                                            <li>负责与客户的部分需求沟通</li>
-                                            <li>参与数据库的分析与设计</li>
-                                            <li>模块功能的开发及测试</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ebtns">
-                            <div class="pre btn"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></div>
-                            <div class="next btn"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></div>
-                        </div>
-                    </div>
-                    <div style="width: 100%; height: auto;"></div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="warp">
-                    <div class="title">
-                        <h2>自我介绍</h2>
-                        <div class="title_en">
-                            <h2>· Self ·</h2>
-                        </div>
-                    </div>
-                    <a class="title-pre" href="javascript:void(0)">工作经历</a>
-                    <a class="title-next" href="javascript:void(0)">基本信息</a>
-                    <div id="myself">
-                        <div class="self">
-                            <div class="self-content">
-                                <div class="circle"><i class="fa fa-graduation-cap fa-4x" aria-hidden="true"></i></div>
-                                <div class="describe">
-                                    学历<p>本科</p>
-                                </div>
-                            </div>
-                            <div class="self-content">
-                                <div class="circle"><i class="fa fa-user-circle-o fa-4x" aria-hidden="true"></i></div>
-                                <div class="describe">
-                                    年龄<p>26岁</p>
-                                </div>
-                            </div>
-                            <div class="self-content">
-                                <div class="circle"><i class="fa fa-map-marker fa-4x" aria-hidden="true"></i></div>
-                                <div class="describe">
-                                    坐标<p>北京</p>
-                                </div>
-                            </div>
-                            <div class="self-content">
-                                <div class="circle"><i class="fa fa-pencil-square fa-4x" aria-hidden="true"></i></div>
-                                <div class="describe">
-                                    状态<p>离职</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <p>2013年毕业于河北科技大学，从此一发不可收拾的踏上了码农的不归路。</p>
-                            <p>后来我发现，我深深的爱上了这行</p>
-                            <p>喜欢优秀的代码，喜欢优雅的框架</p>
-                            <p>渴望加入一个优秀的团队，期望一个良好的工作氛围</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="btns">
-        <div class="pre btn"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
-        <div class="next btn"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-    </div>
-    <div class="points">
-        <div class="point active"></div>
-        <div class="point"></div>
-        <div class="point"></div>
-    </div>
-</section>
-<section id="ability">
-    <div class="container">
-        <div class="warp">
-            <div class="title">
-                <h2>专业技能</h2>
-                <div class="title_en">
-                    <h2>· Skill ·</h2>
-                </div>
-            </div>
-            <div id="skill_list">
-                <div class="skill_list_content skill_scale">
-                    <div class="skill_icon" id="skill_icon_java"></div>
-                    <div class="skill_name">Java</div>
-                    <div class="skill_flag"></div>
-                    <div class="skill_int skill_int_first" style="display: none; width: 445px;">
-                        <ul>
-                            <li>熟练掌握JavaSE、JavaEE，有扎实的Java编程功底和良好的编码习惯</li>
-                            <li>熟练使用(My)Eclipse等工具，Maven以及SVN、Git工具</li>
-                            <li>熟练使用Spring、Struts2、Hibernate、MyBatis、Spring MVC等主流后台框架</li>
-                            <li>熟悉 MVC 架构，熟悉单例、工厂、抽象工厂等常用设计模式</li>
-                            <li>熟悉Java多线程，了解Socket通信技术</li>
-                            <li>熟悉Webservice，了解Spring Boot Restful服务</li>
-							<li>了解Dubbo+Zookeeper分布式及Redis缓存技术</li>
-							<li>了解Android开发技术</li>
-                        </ul>
-                    </div>
-                </div>
 
-                <div class="skill_list_content skill_scale">
-                    <div class="skill_icon" id="skill_icon_js"></div>
-                    <div class="skill_name">Web</div>
-                    <div class="skill_flag"></div>
-                    <div class="skill_int" style="display: none;">
-                        <ul>
-                            <li>熟练使用 HTML、CSS、JS、Ajax、jQuery、EasyUI、Extjs 等 Web 前端技术</li>
-                            <li>熟练使用 Highchars、Echarts 等 web 图表绘制技术</li>
-                            <li>熟悉 Tomcat 等 Web 容器</li>
-                            <li>熟悉 JSP 及 JSTL 等页面技术</li>
-                            <li>了解 Nginx 及负载均衡技术</li>
-                        </ul>
-                    </div>
-                </div>
+<body>
+	<!--nav section start-->
+	<nav class="nav-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<a href="#" class="logo"><img src="assets/img/logo.png" alt="logo image"></a>
+				</div>
+				<div class="col-md-10">
+					<ul id="main-menu">
+						<li><a href="#home">首页</a></li>
+						<li><a href="#about">关于我</a></li>
+						<li><a href="#education">教育经历</a></li>
+						<li><a href="#experience">工作经历</a></li>
+						<li><a href="#service">专业技能</a></li>
+						<li><a href="#work">作品案例</a></li>
+						<li><a href="#blog">我的博客</a></li>
+						<li><a href="#contact">联系我</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!--nav section end-->
+	<!--header section start-->
+	<header class="header-area header-bg" id="home">
+		<div class="header-inner">
+			<span>Welcome</span>
+			<h1>I Am Jastar Wang</h1>
+			<h6></h6>
+			<div class="scroll-down">
+				<span></span>
+			</div>
+		</div>
+	</header>
+	<!--header section end-->
+	<!--about section start-->
+	<section class="about-area" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<img src="assets/img/profile-pic.png" alt="profile picture">
+				</div>
+				<div class="col-md-6">
+					<div class="section-title inner">
+						<h2>About Me</h2>
+						<p>因为一些偶然的原因，一发不可收拾的踏上了码农的不归路。后来我发现，我深深的爱上了这行。喜欢优秀的代码，喜欢优雅的框架，爱折腾，更爱生活！</p>
+					</div>
+					<ul>
+						<li><strong>姓名 :</strong> Jastar Wang(王)</li>
+						<li><strong>性别 :</strong> 男</li>
+						<li><strong>年龄 :</strong> 25</li>
+						<li><strong>学历 :</strong> 专科</li>
+						<li><strong>坐标 :</strong> 北京</li>
+						<li><strong>状态 :</strong> 在职，考虑新机会</li>
+						<li><strong>手机 :</strong> ***马赛克***</li>
+						<li><strong>邮箱 :</strong> jastar_wang@163.com</li>
+						<li><strong>期望岗位 :</strong> Java开发工程师</li>
+						<li><strong>期望行业 :</strong> 互联网</li>
+						<li><strong>高频出差 :</strong> 暂不能接受</li>
+						<li><strong>期望薪资 :</strong> 面议</li>
+					</ul>
+				</div>
+				<div class="col-md-12 text-center">
+					<a href="#" class="boxed-btn">下载简历</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--about section end-->
+	<!--skill section start-->
+	<section class="skill-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<div class="section-title main">
+						<h2>My Skill</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quas error modi quaerat
+							sequi, debitis!</p>
+					</div>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-3 col-sm-6">
+					<div id="circle-1"></div>
+					<h4 class="text-uppercase">Photoshop</h4>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div id="circle-2"></div>
+					<h4 class="text-uppercase">Illustrator</h4>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div id="circle-3"></div>
+					<h4 class="text-uppercase">Html</h4>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div id="circle-4"></div>
+					<h4 class="text-uppercase">Css</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--skill section end-->
 
-                <div class="skill_list_content skill_scale">
-                    <div class="skill_icon" id="skill_icon_css"></div>
-                    <div class="skill_name">Database</div>
-                    <div class="skill_flag"></div>
-                    <div class="skill_int" style="display: none;">
-                        <ul>
-                            <li>熟悉Oracle、MySQL、SqlServer等关系型数据库</li>
-                            <li>熟悉MongoDB非关系型数据库</li>
-                            <li>熟练使用Navicat、PlSql、Studio 3T等客户端工具</li>
-                            <li>熟练编写SQL语句及存储过程</li>
-							<li>熟悉索引及常用SQL性能优化</li>
-                        </ul>
-                    </div>
-                </div>
+	<!--education start -->
+	<section id="education" class="education">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 text-center">
+				<div class="section-title main">
+					<h2>Education</h2>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="education-horizontal-timeline">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="single-horizontal-timeline">
+							<div class="experience-time">
+								<h2>2010.9 - 2013.6</h2>
+								<h4>河北省某实验高中</h4>
+							</div>
+							<!--/.experience-time-->
+							<div class="timeline-horizontal-border">
+								<i class="fa fa-circle" aria-hidden="true"></i>
+								<span class="single-timeline-horizontal"></span>
+							</div>
+							<div class="timeline">
+								<div class="timeline-content">
+									<h5 class="title">
+										高中阶段
+									</h5>
+									<h6>理科男</h6>
+									<p class="description">
+										当时高考成绩本还可以，并得到了河北科大的本科录取通知书。只因年少任性，不想读大学，再加上志愿填报了不喜欢的会计专业，从此葬送了学校生涯……
+									</p>
+								</div>
+								<!--/.timeline-content-->
+							</div>
+							<!--/.timeline-->
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="single-horizontal-timeline">
+							<div class="experience-time">
+								<h2>2013.9 - 2014.12</h2>
+								<h4>云图智联教育</h4>
+							</div>
+							<!--/.experience-time-->
+							<div class="timeline-horizontal-border">
+								<i class="fa fa-circle" aria-hidden="true"></i>
+								<span class="single-timeline-horizontal"></span>
+							</div>
+							<div class="timeline">
+								<div class="timeline-content">
+									<h5 class="title">
+										培训学习
+									</h5>
+									<h6>使用Java开发企业级应用</h6>
+									<p class="description">高考结束后，当时的我和大多数小白一样，在网上搜着“什么工作工资高……”，结果就被当时一窍不通的网络营销（培训机构）勾搭个正着，开始走向码农的不归之路。</p>
+								</div>
+								<!--/.timeline-content-->
+							</div>
+							<!--/.timeline-->
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="single-horizontal-timeline">
+							<div class="experience-time">
+								<h2>2015.9 - 2018.1</h2>
+								<h4>北京外国语大学</h4>
+							</div>
+							<!--/.experience-time-->
+							<div class="timeline-horizontal-border">
+								<i class="fa fa-circle" aria-hidden="true"></i>
+								<span class="single-timeline-horizontal spacial-horizontal-line"></span>
+							</div>
+							<div class="timeline">
+								<div class="timeline-content">
+									<h5 class="title">
+										大学专科
+									</h5>
+									<h6>信息管理与信息技术</h6>
+									<p class="description">
+										几年的工作经历和社会实践，让我懂得了“学历虽不重要，但也非常重要”，于是便开始进修，努力提升自己的文化知识水平。但我从未后悔选择了这条路，虽有失但有得！
+									</p>
+								</div>
+								<!--/.timeline-content-->
+							</div>
+							<!--/.timeline-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-                <div class="skill_list_content skill_scale">
-                    <div class="skill_icon" id="skill_icon_html"></div>
-                    <div class="skill_name">Linux</div>
-                    <div class="skill_flag"></div>
-                    <div class="skill_int" style="display: none;">
-                        <ul>
-                            <li>熟悉Linux基本命令的使用</li>
-							<li>能独立搭建项目部署环境</li>
-							<li>了解Shell编程</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- <ul class="ability-list">
-                <p id="info"></p>
-                <li>
-                    <h4>Java</h4>
-                </li>
-                <li>
-                    <h4>JavaScript</h4>
-                </li>
-                <li>
-                    <h4>CSS</h4>
-                </li>
-                <li>
-                    <h4>HTML</h4>
-                </li>
-                <li>
-                    <h4>React</h4>
-                </li>
-            </ul> -->
-        </div>
-    </div>
-</section>
+	</section>
+	<!--/.education-->
 
-<section id="project">
-    <div class="container">
-        <div class="warp">
-            <div class="title">
-                <h2>项目简介</h2>
-                <div class="title_en">
-                    <h2>· Project ·</h2>
-                </div>
-            </div>
-            <div id="my-project" style="overflow: auto;">
-                <div class="p-div">
-                    <div title="91高徒网" date="（2014.7-2014.11）">
-                        <div class="content"></div>
-                    </div>
-                </div>
-                <div class="p-div">
-                    <div title="慧居生活" date="（2015.10-2015.12）">
-                        <div class="content"></div>
-                    </div>
-                </div>
-                <div class="p-div">
-                    <div title="易科节能管控系统" date="（2016.3-2016.12）">
-                        <div class="content"></div>
-                    </div>
-                </div>
-                <div class="p-div">
-                    <div title="乐映院线点播系统" date="（2017.11-2018.4）">
-                        <div class="content"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section id="contact">
-    <div class="container">
-        <div class="warp">
-            <div class="title">
-                <h2>联系我</h2>
-                <div class="title_en">
-                    <h2>· Contact ·</h2>
-                </div>
-            </div>
-            <div id="contact-me" style="height:550px;">
-                <div class="content">
-                    <!-- 联系方式 -->
-                    <p><i class="fa fa-mobile fa-lg"></i>1********05</p>
-                    <p style="font-size: 13px;">（为保护个人隐私请联系以下邮箱）</p>
-                    <br>
-                    <p><i class="fa fa-envelope-o fa-fw"></i>jastar_wang@163.com</p>
-                    <br>
-                    <!-- <p>
-                        <a href="javascript:void(0);" target="_blank"
-                           class="myicon blog">技术博客</a>
-                        &nbsp;&nbsp;
-                        <a href="javascript:void(0);" target="_blank" class="myicon web">个人网站</a>
-                        &nbsp;&nbsp;
-                        <a href="https://github.com/jastar-wang" target="_blank" class="myicon github">GitHub</a>
-                    </p> -->
+	<!-- experience section start -->
+	<section class="resome-area" id="experience">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<div class="section-title main">
+						<h2>Experience</h2>
+						<p>路漫漫其修远兮，吾将上下而求索！</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-12">
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="education-details">
+						<div class="icon">
+							<i class="fa fa-briefcase"></i>
+						</div>
+						<div class="single-education-list">
+							<h4>MERIN LAND COLLEGE</h4>
+							<span class="duration">2012 - 2014</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, consectetur.</p>
+						</div>
+						<div class="single-education-list">
+							<h4>MERIN LAND COLLEGE</h4>
+							<span class="duration">2012 - 2014</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, consectetur.</p>
+						</div>
+						<div class="single-education-list">
+							<h4>MERIN LAND COLLEGE</h4>
+							<span class="duration">2012 - 2014</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, consectetur.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-46 col-sm-12">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- experience section end -->
 
-                    <!-- 说明 -->
-                    <!-- <div class="big-content">
-                        <p>越努力，越幸运</p>
-                        <p><span style="color: #cb2410;">More efforts</span>, <span style="color: #31a010;">more fortunate</span>
-                        </p>
-                    </div> -->
-                    <br>
-                    <p style="font-family: '微软雅黑';">听前辈说</p>
-                    <br>
-                    <p style="font-family: '微软雅黑';">“永远要做团队里面最差的那个人”</p>
-                    <br>
-                    <p style="font-family: '微软雅黑';">我似懂非懂</p>
-                    <br>
-                    <p style="font-family: '微软雅黑';">后来才明白</p>
-                    <br>
-                    <p style="font-family: '微软雅黑';">并且一直为其努力着</p>
-                    <br>
-                    <p>...</p>
+	<!--service section start-->
+	<section class="service-section" id="service">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<div class="section-title main">
+						<h2>Skill</h2>
+						<p>纸上得来终觉浅，绝知此事要躬行！</p>
+					</div>
+				</div>
+			</div>
+			<div class="service-inner">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<div class="single-service-box">
+							<div class="icon">
+								<img src="assets/img/skill-java.png" alt="">
+							</div>
+							<h4>Java</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, nisi?</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="single-service-box">
+							<div class="icon">
+								<img src="assets/img/skill-web.png" alt="">
+							</div>
+							<h4>Web</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, nisi?</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="single-service-box">
+							<div class="icon">
+								<img src="assets/img/skill-database.png" alt="">
+							</div>
+							<h4>Database</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, nisi?</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="single-service-box">
+							<div class="icon">
+								<img src="assets/img/skill-linux.png" alt="">
+							</div>
+							<h4>Linux</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, nisi?</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--service section end-->
 
-                </div>
-                <footer class="contact_scale fade_in">
-                    <div class="contact_scale footer fade_in">
-                        <a href="javascript:void(0);" target="_blank">CSDN</a>|
-                        <a href="javascript:void(0);" target="_blank">微博</a>|
-                        <a href="javascript:void(0);" target="_blank">简书</a>|
-                        <a href="javascript:void(0);" target="_blank">知乎</a>|
-                        <a href="https://github.com/jastar-wang" target="_blank">Github</a>|
-                        <a href="https://gitee.com/jastar-wang" target="_blank">Gitee</a>
-                    </div>
-                    <div class="contact_scale footer fade_in">Copyright © 2018 Jastar·Wang . All Rights Reserved.</div>
-                </footer>
-            </div>
-        </div>
-    </div>
-</section>
+	<!--portfolio section start-->
+	<section class="portfolio-area" id="work">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<div class="section-title main">
+						<h2>Some Of My Work</h2>
+						<p>之前做过大大小小的很多项目，下面挑选了一些具有代表性的来向您展示。</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<ul class="porfolio-menu">
+						<li data-filter="*" class="active">All</li>
+						<li data-filter=".design">Web Design</li>
+						<li data-filter=".development">Web Development</li>
+						<li data-filter=".photography">Photography</li>
+					</ul>
+				</div>
+				<div class="col-md-12 text-center">
+					<div class="portolio-masonary">
+						<div class="single-porfolio-item grid-size design">
+							<div class="img-thumb">
+								<img src="assets/img/portfolio-1.jpg" alt=" portfolio image ">
+								<div class="hover">
+									<div class="icon">
+										<a href="assets/img/portfolio-1.jpg" class="image-popup"
+											title="Portfolio image">
+											<i class="fa fa-search-plus" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="icon">
+										<i class="fa fa-link" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="single-porfolio-item grid-size design">
+							<div class="img-thumb">
+								<img src="assets/img/portfolio-2.jpg" alt=" portfolio image ">
+								<div>标题啦啦啦啦啦</div>
+								<div class="hover">
+									<div class="icon">
+										<a href="assets/img/portfolio-2.jpg" class="image-popup"
+											title="Portfolio image">
+											<i class="fa fa-search-plus" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="icon">
+										<i class="fa fa-link" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="single-porfolio-item grid-size development">
+							<div class="img-thumb">
+								<img src="assets/img/portfolio-3.jpg" alt=" portfolio image ">
+								<div class="hover">
+									<div class="icon">
+										<a href="assets/img/portfolio-3.jpg" class="image-popup"
+											title="Portfolio image">
+											<i class="fa fa-search-plus" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="icon">
+										<i class="fa fa-link" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="single-porfolio-item grid-size development ">
+							<div class="img-thumb">
+								<img src="assets/img/portfolio-4.jpg" alt=" portfolio image ">
+								<div class="hover">
+									<div class="icon">
+										<a href="assets/img/portfolio-4.jpg" class="image-popup"
+											title="Portfolio image">
+											<i class="fa fa-search-plus" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="icon">
+										<i class="fa fa-link" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="single-porfolio-item grid-size photography">
+							<div class="img-thumb">
+								<img src="assets/img/portfolio-5.jpg" alt=" portfolio image ">
+								<div class="hover">
+									<div class="icon">
+										<a href="assets/img/portfolio-5.jpg" class="image-popup"
+											title="Portfolio image">
+											<i class="fa fa-search-plus" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="icon">
+										<i class="fa fa-link" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="single-porfolio-item grid-size photography">
+							<div class="img-thumb">
+								<img src="assets/img/portfolio-6.jpg" alt=" portfolio image ">
+								<div class="hover">
+									<div class="icon">
+										<a href="assets/img/portfolio-5.jpg" class="image-popup"
+											title="Portfolio image">
+											<i class="fa fa-search-plus" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="icon">
+										<i class="fa fa-link" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--portfolio section end-->
 
-<script type="text/javascript">
-    $(function () {
-        let url = window.location.toString();
-        if (url.indexOf("#") >= 0) {
-            let id = url.split("#")[1];
-            if (id) {
-                $(window).scrollTop($("#" + id).offset().top);
-            }
-        }
-    });
-</script>
+	<!-- blog section start-->
+	<section class="blog-area" id="blog">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<div class="section-title main">
+						<h2>My Blog</h2>
+						<p>听前辈说，一定要做团队里面最差的那一个，我似懂非懂；<br>后来我才明白，并且一直为其努力着<br>······</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="single-blog-post">
+						<div class="post-thumb">
+							<img src="assets/img/blog-1.jpg" alt=" blog image">
+						</div>
+						<h4>STANdard POST WITH IMAGE</h4>
+						<ul class="post-meta">
+							<li><i class="fa fa-clock-o"></i> 05 Jan 2018</li>
+							<li><i class="fa fa-user"></i> By <a href="#">Admin</a></li>
+							<li><i class="fa fa-comments"></i> 27</li>
+						</ul>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, excepturi modi eius a vel
+							accusamus!</p>
+						<a href="#" class="boxed-btn">Read More</a>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="single-blog-post">
+						<div class="post-thumb">
+							<img src="assets/img/blog-2.jpg" alt=" blog image">
+						</div>
+						<h4>STANdard POST WITH IMAGE</h4>
+						<ul class="post-meta">
+							<li><i class="fa fa-clock-o"></i> 05 Jan 2018</li>
+							<li><i class="fa fa-user"></i> By <a href="#">Admin</a></li>
+							<li><i class="fa fa-comments"></i> 27</li>
+						</ul>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, excepturi modi eius a vel
+							accusamus!</p>
+						<a href="#" class="boxed-btn">Read More</a>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="single-blog-post">
+						<div class="post-thumb">
+							<img src="assets/img/blog-3.jpg" alt=" blog image">
+						</div>
+						<h4>STANdard POST WITH IMAGE</h4>
+						<ul class="post-meta">
+							<li><i class="fa fa-clock-o"></i> 05 Jan 2018</li>
+							<li><i class="fa fa-user"></i> By <a href="#">Admin</a></li>
+							<li><i class="fa fa-comments"></i> 27</li>
+						</ul>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, excepturi modi eius a vel
+							accusamus!</p>
+						<a href="#" class="boxed-btn">Read More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- blog section end-->
+	<!--contact section start-->
+	<section class="contact-area" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<div class="section-title main">
+						<h2>Contact Me</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quas error modi quaerat
+							sequi, debitis!</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-12">
+					<div class="single-contact-box">
+						<div class="icon">
+							<img src="assets/img/contact-icon-2.png" alt="contact icon">
+						</div>
+						<h4>Email</h4>
+						<p>contact@mark.com</p>
+					</div>
+					<div class="single-contact-box">
+						<div class="icon">
+							<img src="assets/img/contact-icon-1.png" alt="contact icon">
+						</div>
+						<h4>Location</h4>
+						<p>3481 Melrose Place, Los Angeles</p>
+					</div>
+					<div class="single-contact-box">
+						<div class="icon">
+							<img src="assets/img/contact-icon-3.png" alt="contact icon">
+						</div>
+						<h4>Phone</h4>
+						<p>+ 000-111-222</p>
+					</div>
+				</div>
+				<div class="col-md-8 col-sm-12">
+					<div class="contact-form-wrapper">
+						<form action="index.html">
+							<div class="row">
+								<div class="col-md-6 col-sm-12">
+									<input type="text" placeholder="Enter Name">
+								</div>
+								<div class="col-md-6 col-sm-12">
+									<input type="email" placeholder="Enter Email">
+								</div>
+								<div class="col-md-12">
+									<input type="text" placeholder="Enter Sujbect">
+									<textarea name="message" id="message" cols="30" rows="10"
+										placeholder="Meassage"></textarea>
+									<input type="submit" value="Send Message" class="boxed-btn">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--contact section end-->
+	<!--footer area start-->
+	<footer class="footer-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<ul class="social-area">
+						<li><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="javascript:;"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="javascript:;"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="javascript:;"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="javascript:;"><i class="fa fa-dribbble"></i></a></li>
+					</ul>
+					<div class="copyright-text">
+						<p>Copyright &copy; 2019 Jastar Wang . All Rights Reserved.</p>
+						<p>
+							友情链接：
+							<a href="https://github.com/jastar-wang" target="_blank">Github</a> |
+							<a href="https://gitee.com/jastar-wang" target="_blank">Gitee</a> |
+							<a href="https://dev.tencent.com/u/jastar-wang" target="_blank">Coding</a> |
+							<a href="http://csdn.jastar-wang.com" target="_blank">CSDN</a> |
+							<a href="javascript:;">微博</a> |
+							<a href="javascript:;">简书</a> |
+							<a href="javascript:;">知乎</a> |
+							<a href="https://jeeknav.jastar-wang.com/" target="_blank">Jeek导航</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--footer area end-->
+	<!--prealoader start-->
+	<div class="preloader">
+		<div class="preloader-inner">
+			<div class="cssload-box-loading"></div>
+		</div>
+	</div>
+	<!--prealoader end-->
+	<!--go to top start-->
+	<span class="go-top"><i class="fa fa-angle-double-up"></i></span>
+	<!--go to top end-->
 
+	<!--jquery script load-->
+	<script src="assets/js/jquery.js"></script>
+	<!--Isotope script load-->
+	<script src="assets/js/isotope.pkgd.js"></script>
+	<!-- magnific popup script load-->
+	<script src="assets/js/jquery.magnific-popup.js"></script>
+	<!--way point script load-->
+	<script src="assets/js/waypoints.min.js"></script>
+	<!--line progress bar script load-->
+	<script src="assets/js/circle-progress.min.js"></script>
+	<!-- counter up script load-->
+	<script src="assets/js/typed.js"></script>
+	<!-- typed script load-->
+	<script src="assets/js/jquery.counterup.min.js"></script>
+	<!--Owl carousel script load-->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!--Image load script -->
+	<script src="assets/js/imagesloaded.pkgd.js"></script>
+	<!--Bootstrap v3 script load here-->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!--Slick Nav Js File Load-->
+	<script src="assets/js/jquery.slicknav.min.js"></script>
+	<!--Wow Js File Load-->
+	<script src="assets/js/wow.min.js"></script>
+	<!--Wow Js File Load-->
+	<script src="assets/js/scrollspy.js"></script>
+	<!--Main js file load-->
+	<script src="assets/js/main.js"></script>
 </body>
+
 </html>
