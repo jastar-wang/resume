@@ -25,6 +25,7 @@
 	<!--Responsive Css-->
 	<link href="assets/css/responsive.css" rel="stylesheet">
 	<style type="text/css">
+		/* 教育经历 */
 		.education {
 			background-color: #eee;
 			padding-top: 50px;
@@ -34,7 +35,6 @@
 			padding: 30px 0;
 		}
 
-		/*.education-horizontal-timeline*/
 		.education-horizontal-timeline .col-sm-4 {
 			padding: 0 2px;
 		}
@@ -61,7 +61,6 @@
 			max-width: 335px;
 		}
 
-		/*.timeline-horizontal-border*/
 		.timeline-horizontal-border {
 			display: flex;
 			align-items: center;
@@ -123,6 +122,16 @@
 
 		.work-content ul li {
 			list-style: disc;
+		}
+
+		/* 技能描述 */
+		.skill-list {
+			list-style: disc;
+			padding-left: 25px;
+		}
+
+		.skill-list li {
+			text-align: left;
 		}
 	</style>
 </head>
@@ -470,40 +479,79 @@
 			</div>
 			<div class="service-inner">
 				<div class="row">
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-6 col-sm-6">
 						<div class="single-service-box">
 							<div class="icon">
 								<img src="assets/img/skill-java.png" alt="">
 							</div>
 							<h4>Java</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, nisi?</p>
+							<ul class="skill-list">
+								<li>熟练掌握JavaSE、JavaEE，有扎实的Java编程功底和良好的编码习惯</li>
+								<li>熟练使用Eclipse、IDEA，Maven以及SVN、Git等工具</li>
+								<li>熟练使用Spring Cloud全家桶、Dubbo+Zookeeper微服务框架</li>
+								<li>熟练使用Spring MVC、Spring Boot后台框架</li>
+								<li>熟练使用Hibernate、MyBatis、MyBatis Plus等主流ORM框架</li>
+								<li>熟练使用Redis缓存技术及ActiveMQ等消息队列技术</li>
+								<li>熟悉单例、工厂、抽象工厂等常用设计模式</li>
+								<li>熟悉Java多线程，JavaSwing，了解Socket通信技术</li>
+							</ul>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-6 col-sm-6">
 						<div class="single-service-box">
 							<div class="icon">
 								<img src="assets/img/skill-web.png" alt="">
 							</div>
 							<h4>Web</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, nisi?</p>
+							<ul class="skill-list" style="margin-bottom:66px;">
+								<li>熟练使用 HTML、CSS、JS、Ajax、jQuery等基本Web前端技术</li>
+								<li>熟悉VUE前后端分离，熟悉Layer、EasyUI、Extjs等Web前端框架</li>
+								<li>熟悉 Highchars、Echarts 等 web 图表绘制技术</li>
+								<li>熟悉 Tomcat、Nginx 等 Web 容器</li>
+								<li>熟悉 Jsp 、Beetl 等页面引擎技术</li>
+							</ul>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-6">
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
 						<div class="single-service-box">
 							<div class="icon">
 								<img src="assets/img/skill-database.png" alt="">
 							</div>
 							<h4>Database</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, nisi?</p>
+							<ul class="skill-list">
+								<li>熟悉MySQL、Oracle、SqlServer等关系型数据库</li>
+								<li>熟悉MongoDB等非关系型数据库</li>
+								<li>熟练使用Navicat、PlSql、Studio 3T等客户端工具</li>
+								<li>熟练编写SQL语句及常见SQL性能优化</li>
+							</ul>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-4 col-sm-6">
 						<div class="single-service-box">
 							<div class="icon">
 								<img src="assets/img/skill-linux.png" alt="">
 							</div>
 							<h4>Linux</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, nisi?</p>
+							<ul class="skill-list" style="margin-bottom:66px;">
+								<li>熟悉Linux常用命令的使用</li>
+								<li>能独立搭建项目部署环境</li>
+								<li>了解Shell编程技术</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="single-service-box">
+							<div class="icon">
+								<img src="assets/img/skill-other.png" alt="">
+							</div>
+							<h4>Other</h4>
+							<ul class="skill-list" style="margin-bottom:66px;">
+								<li>熟练使用Guns等J2EE脚手架技术</li>
+								<li>熟悉使用微信小程序技术</li>
+								<li>了解Android技术</li>
+							</ul>
 						</div>
 					</div>
 				</div>
