@@ -784,7 +784,8 @@ a {
   position: relative;
 }
 
-.education-details .single-education-list h4:after, .working-details .single-education-list h4:after {
+/* .education-details .single-education-list h4:after, .working-details .single-education-list h4:after { */
+.working-details .single-education-list h4:after {
   position: absolute;
   left: -59px;
   top: 5px;

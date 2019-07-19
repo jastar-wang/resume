@@ -6,7 +6,7 @@
 
         //typed activate
         $('.header-inner h6').typed({
-            strings: ["我是一名 Java 开发工程师", "已工作4年半", "现居帝都朝阳，", "自北上之日起，就决定为我们首都的空气贡献出一份自己的力量。"],
+            strings: ["我是一名 Java 开发工程师", "已工作4年8个月（截止7月份）", "现居帝都朝阳，", "自北上之日起，就决定为我们首都的空气贡献出一份自己的力量。"],
             loop: true,
             startDelay: 2000,
             backDelay: 1000,
