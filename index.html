@@ -133,6 +133,12 @@
 		.skill-list li {
 			text-align: left;
 		}
+
+		/* 项目案例 */
+		.project-title {
+			font-weight: 600;
+			padding: 10px 0px;
+		}
 	</style>
 </head>
 
@@ -575,16 +581,17 @@
 				<div class="col-md-12 text-center">
 					<ul class="porfolio-menu">
 						<li data-filter="*" class="active">All</li>
-						<li data-filter=".design">Web Design</li>
-						<li data-filter=".development">Web Development</li>
-						<li data-filter=".photography">Photography</li>
+						<li data-filter=".multi">综合</li>
+						<li data-filter=".mgr-system">管理系统</li>
+						<li data-filter=".wxmp">微信小程序</li>
 					</ul>
 				</div>
 				<div class="col-md-12 text-center">
 					<div class="portolio-masonary">
-						<div class="single-porfolio-item grid-size design">
+						<div class="single-porfolio-item grid-size multi">
 							<div class="img-thumb">
-								<img src="assets/img/portfolio-1.jpg" alt=" portfolio image ">
+								<img src="assets/img/portfolio-1.jpg" alt="">
+								<div class="project-title">我要结婚平台</div>
 								<div class="hover">
 									<div class="icon">
 										<a href="assets/img/portfolio-1.jpg" class="image-popup"
@@ -592,16 +599,16 @@
 											<i class="fa fa-search-plus" aria-hidden="true"></i>
 										</a>
 									</div>
-									<div class="icon">
+									<div class="icon" onclick="showProject(1)">
 										<i class="fa fa-link" aria-hidden="true"></i>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="single-porfolio-item grid-size design">
+						<div class="single-porfolio-item grid-size mgr-system">
 							<div class="img-thumb">
-								<img src="assets/img/portfolio-2.jpg" alt=" portfolio image ">
-								<div>标题啦啦啦啦啦</div>
+								<img src="assets/img/portfolio-2.jpg" alt="">
+								<div class="project-title">婚博会CRM管理系统</div>
 								<div class="hover">
 									<div class="icon">
 										<a href="assets/img/portfolio-2.jpg" class="image-popup"
@@ -609,71 +616,39 @@
 											<i class="fa fa-search-plus" aria-hidden="true"></i>
 										</a>
 									</div>
-									<div class="icon">
+									<div class="icon" onclick="showProject(2)">
 										<i class="fa fa-link" aria-hidden="true"></i>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="single-porfolio-item grid-size development">
+						<div class="single-porfolio-item grid-size mgr-system">
 							<div class="img-thumb">
-								<img src="assets/img/portfolio-3.jpg" alt=" portfolio image ">
+								<img src="assets/img/project3.jpg" alt="">
+								<div class="project-title">易科能效管控专家系统</div>
 								<div class="hover">
 									<div class="icon">
-										<a href="assets/img/portfolio-3.jpg" class="image-popup"
-											title="Portfolio image">
+										<a href="assets/img/project3.jpg" class="image-popup" title="易科专家系统上线验收现场">
 											<i class="fa fa-search-plus" aria-hidden="true"></i>
 										</a>
 									</div>
-									<div class="icon">
+									<div class="icon" onclick="showProject(3)">
 										<i class="fa fa-link" aria-hidden="true"></i>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="single-porfolio-item grid-size development ">
+						<div class="single-porfolio-item grid-size wxmp">
 							<div class="img-thumb">
-								<img src="assets/img/portfolio-4.jpg" alt=" portfolio image ">
+								<img src="assets/img/project4.jpg" alt="">
+								<div class="project-title">结婚问答小程序</div>
 								<div class="hover">
 									<div class="icon">
-										<a href="assets/img/portfolio-4.jpg" class="image-popup"
-											title="Portfolio image">
+										<a href="assets/img/project4.jpg" class="image-popup" title="结婚问答小程序V2.0">
 											<i class="fa fa-search-plus" aria-hidden="true"></i>
 										</a>
 									</div>
-									<div class="icon">
-										<i class="fa fa-link" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="single-porfolio-item grid-size photography">
-							<div class="img-thumb">
-								<img src="assets/img/portfolio-5.jpg" alt=" portfolio image ">
-								<div class="hover">
-									<div class="icon">
-										<a href="assets/img/portfolio-5.jpg" class="image-popup"
-											title="Portfolio image">
-											<i class="fa fa-search-plus" aria-hidden="true"></i>
-										</a>
-									</div>
-									<div class="icon">
-										<i class="fa fa-link" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="single-porfolio-item grid-size photography">
-							<div class="img-thumb">
-								<img src="assets/img/portfolio-6.jpg" alt=" portfolio image ">
-								<div class="hover">
-									<div class="icon">
-										<a href="assets/img/portfolio-5.jpg" class="image-popup"
-											title="Portfolio image">
-											<i class="fa fa-search-plus" aria-hidden="true"></i>
-										</a>
-									</div>
-									<div class="icon">
+									<div class="icon" onclick="showProject(4)">
 										<i class="fa fa-link" aria-hidden="true"></i>
 									</div>
 								</div>
@@ -706,7 +681,7 @@
 						<h4>Spring整合MongoDB</h4>
 						<ul class="post-meta">
 							<li><i class="fa fa-clock-o"></i> 2017-4-13</li>
-							<li><i class="fa fa-user"></i> By <a href="#">jastar</a></li>
+							<li><i class="fa fa-user"></i> By <a href="javascript:;">jastar</a></li>
 							<li><i class="fa fa-eye"></i> 1675</li>
 						</ul>
 						<a href="http://www.jastar-wang.com/article/detail.html?id=30" class="boxed-btn"
@@ -721,7 +696,7 @@
 						<h4>MVN的profile构建不同环境配置</h4>
 						<ul class="post-meta">
 							<li><i class="fa fa-clock-o"></i> 2018-3-2</li>
-							<li><i class="fa fa-user"></i> By <a href="#">jastar</a></li>
+							<li><i class="fa fa-user"></i> By <a href="javascript:;">jastar</a></li>
 							<li><i class="fa fa-eye"></i> 701</li>
 						</ul>
 						<a href="http://www.jastar-wang.com/article/detail.html?id=36" class="boxed-btn"
@@ -736,7 +711,7 @@
 						<h4>从技术转管理，我做了什么来拯救自己</h4>
 						<ul class="post-meta">
 							<li><i class="fa fa-clock-o"></i> 2018-10-22</li>
-							<li><i class="fa fa-user"></i> By <a href="#">jastar</a></li>
+							<li><i class="fa fa-user"></i> By <a href="javascript:;">zer0black</a></li>
 							<li><i class="fa fa-eye"></i> 233</li>
 						</ul>
 						<a href="http://www.jastar-wang.com/article/detail.html?id=45" class="boxed-btn"
@@ -879,8 +854,43 @@
 	<script src="assets/js/wow.min.js"></script>
 	<!--Wow Js File Load-->
 	<script src="assets/js/scrollspy.js"></script>
+	<!-- Layer -->
+	<script src="https://cdn.staticfile.org/layer/2.3/layer.js"></script>
 	<!--Main js file load-->
 	<script src="assets/js/main.js"></script>
+
+	<script>
+		function showProject(index) {
+			let title = null;
+			let url = "project/";
+			switch (index) {
+				case 1:
+					title = "我要结婚平台";
+					url += "01-51married.html";
+					break;
+				case 2:
+					title = "婚博会CRM管理系统";
+					url += "02-hbh-crm.html";
+					break;
+				case 3:
+					title = "易科能效管控专家系统";
+					url += "03-ecoic-smart.html";
+					break;
+				case 4:
+					title = "结婚问答小程序";
+					url += "04-51married-wxmp.html";
+					break;
+			}
+			layer.open({
+				type: 2,
+				title: [title, "font-weight:bold"],
+				shadeClose: true,
+				maxmin: false,
+				area: ['600px', '400px'],
+				content: url
+			});
+		}
+	</script>
 </body>
 
 </html>
