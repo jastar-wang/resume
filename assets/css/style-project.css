@@ -19,3 +19,7 @@
     padding: 10px;
     border: 1px solid #d8cfcf;
 }
+
+.proj-table .row-body img {
+    width: 100%;
+}
