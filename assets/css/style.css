@@ -699,33 +699,6 @@ a {
   width: 45%;
 }
 
-/*==============================
-** Skill Scss
-==============================*/
-
-.skill-section {
-  background-color: #eee;
-  padding-top: 68px;
-  padding-bottom: 68px;
-  display: none;
-}
-
-#circle-1, #circle-2, #circle-3, #circle-4 {
-  text-align: center;
-  position: relative;
-  display: inline-block;
-}
-
-#circle-1 span, #circle-2 span, #circle-3 span, #circle-4 span {
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  font-size: 25px;
-  font-weight: 900;
-  transform: translate(-50%, -50%);
-}
-
 /*==========================
 ** Education and experience
 ==========================*/
