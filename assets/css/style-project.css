@@ -1,0 +1,21 @@
+/* 项目案例 */
+
+.proj-table {
+    padding: 0px 10px;
+    width: 100%;
+}
+
+.proj-table tr {
+    width: 100%;
+}
+
+.proj-table .row-head {
+    font-weight: bold;
+    width: 5%;
+    border: 1px solid #d8cfcf;
+}
+
+.proj-table .row-body {
+    padding: 10px;
+    border: 1px solid #d8cfcf;
+}
