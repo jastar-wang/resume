@@ -3,7 +3,6 @@
     /*--document ready functions--*/
     jQuery(document).ready(function ($) {
 
-
         //typed activate
         $('.header-inner h6').typed({
             strings: ["我是一名 Java 开发工程师", "已工作4年8个月（截止7月份）", "现居帝都朝阳，", "自北上之日起，就决定为我们首都的空气贡献出一份自己的力量。"],
@@ -161,7 +160,38 @@
     $(window).on('load', function () {
         var preLoder = $(".preloader");
         preLoder.fadeOut(1000);
-
     });
 
-}(jQuery));	
+}(jQuery));
+
+// 项目案例详情
+function showProject(index) {
+    let title = null;
+    let url = "project/";
+    switch (index) {
+        case 1:
+            title = "我要结婚平台";
+            url += "01-51married.html";
+            break;
+        case 2:
+            title = "婚博会CRM管理系统";
+            url += "02-hbh-crm.html";
+            break;
+        case 3:
+            title = "易科能效管控专家系统";
+            url += "03-ecoic-smart.html";
+            break;
+        case 4:
+            title = "结婚问答小程序";
+            url += "04-51married-wxmp.html";
+            break;
+    }
+    layer.open({
+        type: 2,
+        title: [title, "font-weight:bold"],
+        shadeClose: true,
+        maxmin: false,
+        area: ['800px', '500px'],
+        content: url
+    });
+}
