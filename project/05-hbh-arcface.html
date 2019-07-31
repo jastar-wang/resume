@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../assets/css/style-project.css">
+</head>
+
+<body>
+    <table class="proj-table">
+        <tr>
+            <td class="row-head">项目简介</td>
+            <td class="row-body">
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    线下会展是中国婚博会的主要经营模式，每次会展开始前都会有大批量的观众通过安检入场，传统的方式是需要观众提供身份证，并交由工作人员查询信息并查看是
+                    否是本人等相关信息方可入场，而这面临的状况是高峰进场时段通行效率极低，导致现场排队人数较多，秩序紊乱。
+                    <br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    由此开发了人脸识别的web应用，让观众自己面朝摄像头自己刷身份证，系统校验成功后语音提示通过，比以往至少提高了一
+                    倍的观众进场效率，并且大大减轻了现场工作人员的压力。该系统的整个流程如下：
+                    <br><br>
+                    <img src="http://images.jastar-wang.com/resume/project/hbh/arcface/arcface.png-dfs" alt="">
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td class="row-head">项目职责</td>
+            <td class="row-body">负责整个应用的设计和开发</td>
+        </tr>
+        <tr>
+            <td class="row-head">项目技术</td>
+            <td class="row-body">
+                <ul>
+                    <li>项目采用web应用bs架构，Spring Boot框架，部署在现场安检入口的每台电脑上</li>
+                    <li>集成外接身份证识别仪，读取观众身份证信息</li>
+                    <li>底层基于虹软的人脸识别SDK（.dll库）实现人像对比功能</li>
+                    <li>
+                        由于当时虹软未提供针对语言版的SDK，所以本人开源了一套针对Java版的SDK及demo应用，
+                        详情见：<code>https://github.com/jastar-wang/arcface</code>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

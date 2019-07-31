@@ -185,6 +185,10 @@ function showProject(index) {
             title = "结婚问答小程序";
             url += "04-51married-wxmp.html";
             break;
+        case 5:
+            title = "展会人脸识别应用";
+            url += "05-hbh-arcface.html";
+            break;
     }
     layer.open({
         type: 2,
