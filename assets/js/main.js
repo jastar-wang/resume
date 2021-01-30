@@ -5,11 +5,11 @@
 
         //typed activate
         $('.header-inner h6').typed({
-            strings: ["我是一名 Java 开发工程师", "已工作4年8个月（截止7月份）", "现居帝都朝阳，", "自北上之日起，就决定为我们首都的空气贡献出一份自己的力量。"],
+            strings: ["我是一名 Java 开发工程师", "专科毕业于北京外国语大学", "现居帝都朝阳", "至今已工作5年有余", "听前辈说，要做团队里最差的人", "我似懂非懂", "后来我才明白，并一直努力着……"],
             loop: true,
             startDelay: 2000,
             backDelay: 1000,
-            typeSpeed: 40,
+            typeSpeed: 60,
             showCursor: true,
             cursorChar: '|',
             autoInsertCss: true
