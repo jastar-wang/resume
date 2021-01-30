@@ -164,7 +164,10 @@
 
 }(jQuery));
 
-// 项目案例详情
+/**
+ * 查看案例详情
+ * @param {Number} index 
+ */
 function showProject(index) {
     let title = null;
     let url = "project/";
@@ -195,7 +198,23 @@ function showProject(index) {
         title: [title, "font-weight:bold"],
         shadeClose: true,
         maxmin: false,
-        area: ['800px', '500px'],
+        area: screen() < 2 ? ['90%', '80%'] : ['800px', '500px'],
         content: url
     });
+}
+
+/**
+ * 判断当前页面大小的类别
+ */
+function screen() {
+    var width = $(window).width();
+    if (width > 1200) {
+        return 3;   //大屏幕
+    } else if (width > 992) {
+        return 2;   //中屏幕
+    } else if (width > 768) {
+        return 1;   //小屏幕
+    } else {
+        return 0;   //超小屏幕
+    }
 }
