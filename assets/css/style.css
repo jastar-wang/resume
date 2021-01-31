@@ -1220,7 +1220,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 .work-pic img, .about-area img {
   max-width: 98%;
   border-radius: 5px;
-  opacity: 0.6;
 }
 
 .work-pic p {
