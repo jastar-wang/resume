@@ -166,33 +166,12 @@
 
 /**
  * 查看案例详情
- * @param {Number} index 
+ * @param {Object} dom 节点
+ * @param {String} prefix 路径前缀
  */
-function showProject(index) {
-    let title = null;
-    let url = "project/";
-    switch (index) {
-        case 1:
-            title = "我要结婚平台";
-            url += "01-51married.html";
-            break;
-        case 2:
-            title = "婚博会CRM管理系统";
-            url += "02-hbh-crm.html";
-            break;
-        case 3:
-            title = "易科能效管控专家系统";
-            url += "03-ecoic-smart.html";
-            break;
-        case 4:
-            title = "结婚问答小程序";
-            url += "04-51married-wxmp.html";
-            break;
-        case 5:
-            title = "展会人脸识别应用";
-            url += "05-hbh-arcface.html";
-            break;
-    }
+function showProject(dom, prefix) {
+    let title = $(dom).parent(".hover").siblings(".project-title").text();
+    let url = "project/" + prefix + ".html";
     layer.open({
         type: 2,
         title: [title, "font-weight:bold"],

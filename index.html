@@ -364,7 +364,7 @@
 								<li>熟练使用Spring Cloud全家桶、Dubbo+Zookeeper微服务框架</li>
 								<li>熟练使用Spring MVC、Spring Boot后台框架</li>
 								<li>熟练使用Hibernate、MyBatis、MyBatis Plus等主流ORM框架</li>
-								<li>熟练使用Redis缓存技术及ActiveMQ等消息队列技术</li>
+								<li>熟练使用Redis缓存技术，熟悉ActiveMQ、Kafka等消息队列技术</li>
 								<li>熟悉单例、工厂、抽象工厂等常用设计模式</li>
 								<li>熟悉Java多线程及JVM调优</li>
 							</ul>
@@ -378,7 +378,7 @@
 							<h4>Web</h4>
 							<ul class="skill-list" style="margin-bottom:66px;">
 								<li>熟练使用 HTML、CSS、JS、Ajax、jQuery等基本Web前端技术</li>
-								<li>熟悉Vue前后端分离，熟悉Layer、EasyUI、Extjs等Web前端框架</li>
+								<li>熟悉Vue前后端分离，熟悉Layer、EasyUI等Web前端框架</li>
 								<li>熟悉 Highchars、Echarts 等 web 图表绘制技术</li>
 								<li>熟悉 Tomcat、Nginx 等 Web 容器</li>
 								<li>熟悉 Jsp 、Beetl 等页面引擎技术</li>
@@ -422,11 +422,10 @@
 							<h4>Other</h4>
 							<ul class="skill-list">
 								<li>强迫症级别的编码及注释风格</li>
-								<li>熟悉SonarQube代码质量管理平台</li>
-								<li>熟悉Confluence、Jira项目管理平台</li>
+								<li>熟悉Confluence、Jira、SonarQube、Jenkins、Rancher等平台</li>
 								<li>熟悉Guns等J2EE脚手架技术</li>
 								<li>熟悉微信小程序开发技术</li>
-								<li>了解Android技术</li>
+								<li>熟悉常用UML的绘制</li>
 							</ul>
 						</div>
 					</div>
@@ -461,47 +460,15 @@
 					<div class="portolio-masonary">
 						<div class="single-porfolio-item grid-size multi">
 							<div class="img-thumb">
-								<img src="assets/img/project1.jpg" alt="">
-								<div class="project-title">我要结婚平台</div>
+								<img src="assets/img/project-05.jpg" alt="">
+								<div class="project-title">我要结婚婚礼平台</div>
 								<div class="hover">
 									<div class="icon">
-										<a href="assets/img/project1.jpg" class="image-popup" title="我要结婚网v1.1地方站版">
+										<a href="assets/img/project-05.jpg" class="image-popup" title="我要结婚网v1.1地方站版">
 											<i class="fa fa-search-plus" aria-hidden="true"></i>
 										</a>
 									</div>
-									<div class="icon" onclick="showProject(1)">
-										<i class="fa fa-link" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="single-porfolio-item grid-size mgr-system">
-							<div class="img-thumb">
-								<img src="assets/img/project2.jpg" alt="">
-								<div class="project-title">婚博会CRM管理系统</div>
-								<div class="hover">
-									<div class="icon">
-										<a href="assets/img/project2.jpg" class="image-popup" title="CRM管理系统">
-											<i class="fa fa-search-plus" aria-hidden="true"></i>
-										</a>
-									</div>
-									<div class="icon" onclick="showProject(2)">
-										<i class="fa fa-link" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="single-porfolio-item grid-size mgr-system">
-							<div class="img-thumb">
-								<img src="assets/img/project3.jpg" alt="">
-								<div class="project-title">易科能效管控专家系统</div>
-								<div class="hover">
-									<div class="icon">
-										<a href="assets/img/project3.jpg" class="image-popup" title="易科专家系统上线验收现场">
-											<i class="fa fa-search-plus" aria-hidden="true"></i>
-										</a>
-									</div>
-									<div class="icon" onclick="showProject(3)">
+									<div class="icon" onclick="showProject(this,'05-51married')">
 										<i class="fa fa-link" aria-hidden="true"></i>
 									</div>
 								</div>
@@ -509,15 +476,15 @@
 						</div>
 						<div class="single-porfolio-item grid-size wxmp">
 							<div class="img-thumb">
-								<img src="assets/img/project4.jpg" alt="">
+								<img src="assets/img/project-04.jpg" alt="">
 								<div class="project-title">结婚问答小程序</div>
 								<div class="hover">
 									<div class="icon">
-										<a href="assets/img/project4.jpg" class="image-popup" title="结婚问答小程序V2.0">
+										<a href="assets/img/project-04.jpg" class="image-popup" title="结婚问答小程序V2.0">
 											<i class="fa fa-search-plus" aria-hidden="true"></i>
 										</a>
 									</div>
-									<div class="icon" onclick="showProject(4)">
+									<div class="icon" onclick="showProject(this,'04-51married-wxmp')">
 										<i class="fa fa-link" aria-hidden="true"></i>
 									</div>
 								</div>
@@ -525,16 +492,48 @@
 						</div>
 						<div class="single-porfolio-item grid-size other">
 							<div class="img-thumb">
-								<img src="assets/img/project5.jpg" alt="">
-								<div class="project-title">人脸识别系统</div>
+								<img src="assets/img/project-03.jpg" alt="">
+								<div class="project-title">人脸识别门禁系统</div>
 								<div class="hover">
 									<div class="icon">
-										<a href="assets/img/project5.jpg" class="image-popup"
+										<a href="assets/img/project-03.jpg" class="image-popup"
 											title="展会人脸识别系统，基于虹软人脸识别技术">
 											<i class="fa fa-search-plus" aria-hidden="true"></i>
 										</a>
 									</div>
-									<div class="icon" onclick="showProject(5)">
+									<div class="icon" onclick="showProject(this,'03-hbh-arcface')">
+										<i class="fa fa-link" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="single-porfolio-item grid-size mgr-system">
+							<div class="img-thumb">
+								<img src="assets/img/project-02.jpg" alt="">
+								<div class="project-title">婚博会CRM管理系统</div>
+								<div class="hover">
+									<div class="icon">
+										<a href="assets/img/project-02.jpg" class="image-popup" title="CRM管理系统">
+											<i class="fa fa-search-plus" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="icon" onclick="showProject(this,'02-hbh-crm')">
+										<i class="fa fa-link" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="single-porfolio-item grid-size mgr-system">
+							<div class="img-thumb">
+								<img src="assets/img/project-01.jpg" alt="">
+								<div class="project-title">易科能效管控专家系统</div>
+								<div class="hover">
+									<div class="icon">
+										<a href="assets/img/project-01.jpg" class="image-popup" title="易科专家系统上线验收现场">
+											<i class="fa fa-search-plus" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="icon" onclick="showProject(this,'01-ecoic-smart')">
 										<i class="fa fa-link" aria-hidden="true"></i>
 									</div>
 								</div>
