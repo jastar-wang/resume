@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../assets/css/style-project.css">
+</head>
+
+<body>
+    <table class="proj-table">
+        <tr>
+            <td class="row-head">项目简介</td>
+            <td class="row-body">
+                <p>
+                    美术蛙是一个培养少儿美术能力的在线教育平台，主产品线采用一对一直播互动教学模式，其他产品线也包含小班课、大班课模式。
+                </p>
+                <p>
+                    1. 用户端：APP（Android、iOS）及PC（Windows、Mac）<br>
+                    [学生]课程信息、班级列表、课前预习、直播上课、课堂评价、作品交流互动（点赞）、订单、邀请好友、信息维护等主要功能。<br>
+                    [教师]课程信息、更换课件、教学上课、点评学生作品、查看评价、信息维护等主要功能。
+                </p>
+                <p>
+                    2. 后台系统：面向销售/班主任/教师/运营/人事等多个角色，主要提供 课程（体系、课件、套餐），客户（渠道、订单），人效（销
+                    售、班主任、教师、学生、班级、业绩），教学（排课、作品、相框），活动（朋友圈邀请审核），系统（用户、权限、APP相关配置）
+                    等多个维度的数据管理分析功能，是一个集CRM、CMS为一体的综合管理系统。
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td class="row-head">项目技术</td>
+            <td class="row-body">
+                该系统采用 Spring Cloud Netflix 微服务架构体系，Nginx+Zuul网关，Eureka为注册中心，Config配置中心，Bus+Kafka消息总线，Zipkin
+                链路追踪，Feign+Ribbon实现客户端调用。并拆分了用户、推送、机器校验、文件、业务等多个独立服务，使用统一的认证鉴权中心，高内聚
+                低耦合；同时使用Git+Maven进行项目管理、Docker集群部署。
+            </td>
+        </tr>
+        <tr>
+            <td class="row-head">项目职责</td>
+            <td class="row-body">
+                聚焦于业务服务模块，主导APP端对应的90%的接口及10%的后台系统接口设计开发，负责对接教学直播、营销推广等第三方服务，同时对接产
+                品需求，配合编写相关文档。
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
