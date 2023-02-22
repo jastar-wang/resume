@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../assets/css/style-project.css">
+</head>
+
+<body>
+    <table class="proj-table">
+        <tr>
+            <td class="row-head">项目简介</td>
+            <td class="row-body">
+                <p>
+                    大象找活及大象机主、大象机械是一个为全国建筑机械行业的工友提供求职、招聘、找活、出租/买卖二手机等服务的信息平台。
+                </p>
+                <p>
+                    用户端的主要功能：数据展示，发布求职/招聘、求购/出售、求租/出租机械信息，个人信息及简历维护，举报黑老板，购买积分等。
+                </p>
+                <p>
+                    另有复杂的内部后台运营系统，可以配置积分套餐，审核用户发布的信息，封禁限制恶意用户，管理老赖等。其他功能如有兴趣，可当面了解。
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td class="row-head">项目技术</td>
+            <td class="row-body">
+                采用Gitlab+Gradle+CI/CD进行项目管理和持续交付，基于Spring Cloud + Eureka +
+                Apollo微服务架构搭建的分布式系统，集成了Skywalking链路追踪，引入了消息中间件Kafka并依赖于Zookeeper；
+                项目数据量可达千万/亿级别，使用 Redis 缓存，数据库采用 MySQL + PostgreSQL + ShardingSphere 协同实现，并采用 ES
+                实现用户端/后台系统的信息搜索，部分库表间的数据同步使用Canal组件。
+            </td>
+        </tr>
+        <tr>
+            <td class="row-head">项目职责</td>
+            <td class="row-body">
+                负责部分需求的分析设计和开发工作，如发布内容、列表搜索等用户端功能、后台部分功能均有涉猎，另参与部分系统的重构、前沿技术的调研实践，快速响应产品运营需求的数据报表等
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
